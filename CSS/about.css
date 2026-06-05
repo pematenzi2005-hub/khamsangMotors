@@ -67,7 +67,7 @@ header {
 }
 
 .Main {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/image/group\ photo.JPG");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../image/group\ photo.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center ;
