@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services & Fleet - ཁམས་བསང་ Motors</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/service.css" />
+    <link rel="icon"  href="./image/logo 3.jpg">
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./image/logo 3.jpg" loading="lazy" alt="Logo" />
+        </div>
+        
+        <div class="menu-btn" onclick="Menu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      
+        <div class="nav" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html" class="active-link">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="services-hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <h1>Premium Motor Services</h1>
+            <p class="hero-motto">Offering a pathway to somewhere <strong>out of the chaos.</strong> Engineered for the open roads.</p>
+            <a href="#services-display" class="hero-btn">Explore Fleet &amp; Support</a>
+        </div>
+    </section>
+
+    <div class="container" id="services-display">
+        
+        <div class="left-side">
+            <div class="service-card active" data-target="rental">
+                <img src="https://i.pinimg.com/736x/33/c2/cf/33c2cfbca98881e342410b0e85b623f3.jpg" loading="lazy" alt="Rentals">
+                <div>
+                    <h3>Motor Rental &amp; Sales</h3>
+                    <p>Hourly • Daily • Fleet Booking</p>
+                </div>
+            </div>
+
+            <div class="service-card" data-target="tour">
+                <img src="https://i.pinimg.com/736x/30/bb/86/30bb867f7764ba50c4d48b872f134c5e.jpg" loading="lazy" alt="Tours">
+                <div>
+                    <h3>Guided Tours</h3>
+                    <p>Explore with experts</p>
+                </div>
+            </div>
+
+            <div class="service-card" data-target="planning">
+                <img src="https://i.pinimg.com/736x/da/b6/e3/dab6e300f22d6743c1c70a9a48ad92fa.jpg" loading="lazy" alt="Planning">
+                <div>
+                    <h3>Trip Planning</h3>
+                    <p>Custom routes</p>
+                </div>
+            </div>
+
+            <div class="service-card" data-target="mechanic">
+                <img src="https://i.pinimg.com/736x/45/ce/2b/45ce2b04eacce256363a75f599351b8f.jpg" loading="lazy" alt="Mechanic">
+                <div>
+                    <h3>Mechanic Support</h3>
+                    <p>On-road assistance</p>
+                </div>
+            </div>
+
+            <div class="service-card" data-target="gear">
+                <img src="https://i.pinimg.com/736x/78/c3/03/78c303fbaa3ec638a4d273df11c228f3.jpg" loading="lazy" alt="Gear">
+                <div>
+                    <h3>Safety Gear</h3>
+                    <p>Helmets • Jackets</p>
+                </div>
+            </div>
+            
+            <div class="service-card" data-target="emergency">
+                <img src="https://cdn.eventfinda.co.nz/uploads/events/transformed/2179867-931274-35.jpg?v=2" loading="lazy" alt="Emergency">
+                <div>
+                    <h3>Emergency Rescue</h3>
+                    <p>24/7 roadside recovery</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            
+            <div class="content-box active" id="rental">
+                <h1>Motor Rentals &amp; Purchases</h1>
+                <p style="margin-bottom: 25px;">Flexible rental options and outright high-performance machinery sales. Select a category modifier below to slice through our showroom catalog dynamically.</p>
+                
+                <div class="filter-buttons">
+                    <button class="filter-tab active-filter" onclick="filterBikes('all', this)">All Fleet</button>
+                    <button class="filter-tab" onclick="filterBikes('sports', this)">Sports</button>
+                    <button class="filter-tab" onclick="filterBikes('adventure', this)">Adventure</button>
+                    <button class="filter-tab" onclick="filterBikes('cruiser', this)">Cruiser</button>
+                </div>
+
+                <div class="bike-gallery-grid">
+                    
+                    <div class="bike-card" data-category="adventure">
+                        <img src="./image/img 15(ad).jpg" loading="lazy" alt="KTM 390">
+                        <h2>KTM 390</h2>
+                        <p>Ride beyond limits.</p>
+                        <div class="rate-tag">Rent: Nu.1,000 / day</div>
+                        <div class="buy-tag">Value: Nu.1.72 - 1.85 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="adventure">
+                        <img src="./image/img 3.png" loading="lazy" alt="BMW R 1300 GS">
+                        <h2>BMW R 1300 GS</h2>
+                        <p>Ride beyond limits.</p>
+                        <div class="rate-tag">Rent: Nu.10,000 / day</div>
+                        <div class="buy-tag">Value: Nu.24.00 - 27.00 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="cruiser">
+                        <img src="./image/img 2.png" loading="lazy" alt="Honda Rebel 500">
+                        <h2>Honda Rebel 500</h2>
+                        <p>Low ride, high confidence.</p>
+                        <div class="rate-tag">Rent: Nu.1,500 / day</div>
+                        <div class="buy-tag">Value: Nu.2.50 - 3.00 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="cruiser">
+                        <img src="./image/img 14(cur b).jpg" loading="lazy" alt="H-D V-Rod">
+                        <h2>H-D V-Rod</h2>
+                        <p>Comfortable long rides</p>
+                        <div class="rate-tag">Rent: Nu.6,500 / day</div>
+                        <div class="buy-tag">Value: Nu.5.00 - 8.30 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="adventure">
+                        <img src="./image/img 15(add).jpg" loading="lazy" alt="KTM 1290">
+                        <h2>KTM 1290</h2>
+                        <p>Built to explore every terrain</p>
+                        <div class="rate-tag">Rent: Nu.1,200 / day</div>
+                        <div class="buy-tag">Value: Nu.1.60 - 1.95 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="sports">
+                        <img src="./image/img 6.jpg" loading="lazy" alt="Ninja H2">
+                        <h2>Ninja H2</h2>
+                        <p>Supercharged hyperbike adrenaline</p>
+                        <div class="rate-tag">Rent: Nu.25,000 / day</div>
+                        <div class="buy-tag">Value: Nu.40 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="sports">
+                        <img src="./image/img 7.jpg" loading="lazy" alt="Ninja ZX-10R">
+                        <h2>Ninja ZX-10R</h2>
+                        <p>Born for the track</p>
+                        <div class="rate-tag">Rent: Nu.1,200 / day</div>
+                        <div class="buy-tag">Value: Nu.21 - 24 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="sports">
+                        <img src="./image/img 8.jpg" loading="lazy" alt="Ninja ZX-6R">
+                        <h2>Ninja ZX-6R</h2>
+                        <p>Precision track performance</p>
+                        <div class="rate-tag">Rent: Nu.5,000 / day</div>
+                        <div class="buy-tag">Value: Nu.13.50 - 15.50 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="cruiser">
+                        <img src="./image/img 9.jpg"  loading="lazy" alt="Harley-Davidson S">
+                        <h2>Harley-Davidson S</h2>
+                        <p>Modern American muscle</p>
+                        <div class="rate-tag">Rent: Nu.7,500 / day</div>
+                        <div class="buy-tag">Value: Nu.19.75 - 22.00 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="adventure">
+                        <img src="./image/img16(444).jpg" loading="lazy" alt="Honda NX500">
+                        <h2>Honda NX500</h2>
+                        <p>Boundless everyday exploration</p>
+                        <div class="rate-tag">Rent: Nu.3,500 / day</div>
+                        <div class="buy-tag">Value: Nu.6.33 - 7.44 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="sports">
+                        <img src="./image/img 11.jpg" loading="lazy" alt="Panigale V4 SP2">
+                        <h2>Panigale V4 SP2</h2>
+                        <p>Italian racetrack royalty</p>
+                        <div class="rate-tag">Rent: Nu.3,500 / day</div>
+                        <div class="buy-tag">Value: Nu.49.00 - 55.00 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="bike-card" data-category="cruiser">
+                        <img src="./image/img13.jpg" loading="lazy" alt="Ducati Diavel V4">
+                        <h2>Ducati Diavel V4</h2>
+                        <p>Pure mechanical menace</p>
+                        <div class="rate-tag">Rent: Nu.1,500 / day</div>
+                        <div class="buy-tag">Value: Nu.32.00 - 34.50 Lakh</div>
+                        <div class="card-action-row">
+                            <button class="action-btn rent" onclick="showRentForm()">Rent Now</button>
+                            <button class="action-btn buy" onclick="showBuyForm()">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box" id="tour">
+                <img class="big-img" src="https://i.pinimg.com/736x/30/bb/86/30bb867f7764ba50c4d48b872f134c5e.jpg" loading="lazy" alt="Tours Banner">
+                <h1>Guided Tours</h1>
+                <p>Explore breathtaking locations and technical mountain curves under the wings of certified local motorcycle guides.</p>
+            </div>
+
+            <div class="content-box" id="planning">
+                <img class="big-img" src="https://i.pinimg.com/736x/da/b6/e3/dab6e300f22d6743c1c70a9a48ad92fa.jpg" loading="lazy" alt="Planning Banner">
+                <h1>Trip Planning</h1>
+                <p>We draft out entire geographic travel tracks, map pit-stops, and curate bespoke accommodation check-ins optimized for your specific motorcycle tier configuration.</p>
+            </div>
+
+            <div class="content-box" id="mechanic">
+                <img class="big-img" src="https://i.pinimg.com/736x/45/ce/2b/45ce2b04eacce256363a75f599351b8f.jpg" loading="lazy" alt="Mechanic Banner">
+                <h1>Road Assist.</h1>
+                <p>24/7 mobile field mechanic units carrying tools and essential components right to your highway location.</p>
+            </div>
+
+            <div class="content-box" id="gear">
+                <img class="big-img" src="https://www.passbike.co.uk/content/uploads/angles/angle-img-workshop.webp" loading="lazy" alt="Gear Banner">
+                <h1>Safety Gear</h1>
+                <p>Premium helmets, heavy-duty armored jackets, specialized travel gloves, and flexible limb guards.</p>
+            </div>
+
+            <div class="content-box" id="emergency">
+                <img class="big-img" src="https://cdn.eventfinda.co.nz/uploads/events/transformed/2179867-931274-35.jpg?v=2"  loading="lazy" alt="Emergency Banner">
+                <h1>Emergency Rescue</h1>
+                <p>24/7 dedicated heavy-rescue pickup tracks with specialized hydraulic lifts for safe towing loops.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-modal-backdrop" id="formBackdrop" onclick="closeForms()"></div>
+    
+    <div class="form-box" id="rentForm">
+        <span class="close-btn" onclick="closeForms()">&times;</span>
+        <h2>Bike Rental Request</h2>
+        <form id="rentBikeForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="number" placeholder="CID Number" required>
+            <input type="number" placeholder="Phone Number" required>
+            <input type="number" placeholder="Number of Rental Days" required>
+            <input id="date" type="date" required>
+            <select id="sel" required>
+                <option value="">Select Payment Method</option>
+                <option>Cash</option>
+                <option>Online Payment</option>
+            </select>
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+    </div>
+
+    <div class="form-box" id="buyForm">
+        <span class="close-btn" onclick="closeForms()">&times;</span>
+        <h2>Bike Purchase Sheet</h2>
+        <form id="buyBikeForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="number" placeholder="CID Number" required>
+            <input type="number" placeholder="Phone Number" required>
+            <input type="text" placeholder="Home Address" required>
+            <input type="text" placeholder="Desired Drop/PickUp Point" required>
+            <select required>
+                <option value="">Select Preferred Payment</option>
+                <option>Cash</option>
+                <option>Card Payment</option>
+                <option>Online Mobile Banking</option>
+            </select>
+            <button type="submit" class="submit-btn">Submit Order</button>
+        </form>
+    </div>
+
+    <section class="about-section">
+        <h2>About Our Capabilities</h2>
+        <p>Providing high-tier technical vehicle setups alongside prompt logistical backup loops out of Paro.</p>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>🚀 Our Mission</h3>
+                <p>To make motorcycle travel easy, affordable, and enjoyable for everyone.</p>
+            </div>
+            <div class="about-card">
+                <h3>🌍 Our Vision</h3>
+                <p>To become the most trusted adventure riding company in the region.</p>
+            </div>
+            <div class="about-card">
+                <h3>⭐️ Why Choose Us</h3>
+                <p>Well-maintained bikes, expert support, and 24/7 roadside assistance.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box text-left">
+                <div class="footer-brand-header">
+                    <img src="./image/lobg.png" loading="lazy" id="logo" alt="Logo">
+                    
+                </div>
+                <p>“We believe the greatest journeys are not measured by distance, but by the memories, freedom, and stories discovered along the way.”</p>
+            </div>
+           
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>Email: pematenzi2005@gmail.com</p>
+                <p>Phone: +975 16110648</p>
+                <p>Location: Paro</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 khamsang | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="./JS/service.js"></script>
+</body>
+</html>

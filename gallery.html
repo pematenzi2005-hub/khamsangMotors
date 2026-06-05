@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/gallery.css">
+  <link rel="icon"  href="./image/logo 3.jpg">
+
+  <title>Bike Fleet Gallery</title>
+</head>
+<body>
+    
+  <header>
+    <div class="logo">
+      <img src="./image/logo 3.jpg" loading="lazy" alt="Logo" />
+    </div>
+
+    <div class="menu-btn" onclick="Menu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="nav" id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="gallery-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Our Premium Fleet</h1>
+      <p>Explore the finest selection of Sports, Adventure, and Cruiser motorcycles built to conquer the open roads.</p>
+
+      <a href="contact.html" class="service-btn">
+              Contact Us
+              <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+    </div>
+  </section>
+
+  <div class="brand-title">
+    <h1><sup>ཁམས་བསང་</sup><span id="tp"><sub>Motors</sub></span></h1>
+  </div>
+
+  <div class="filter-buttons">
+    <button onclick="filterBikes('all')">All Fleet</button>
+    <button onclick="filterBikes('sports')">Sports</button>
+    <button onclick="filterBikes('adventure')">Adventure</button>
+    <button onclick="filterBikes('cruiser')">Cruiser</button>
+  </div>
+
+  <div class="container">
+    
+    <div class="card" data-category="adventure">
+      <img src="./mainnnn/bike 8 G.webp" loading="lazy" alt="KTM 390">
+      <h2>KTM 390</h2>
+      <p>Ride beyond limits.</p>
+      <div class="price">Rent: Nu.1,000 / day</div>
+      <div class="price buying-price">Value: Nu.1.72 Lakh – 1.85 Lakh</div>
+    </div>
+
+    <div class="card" data-category="adventure">
+      <img src="./mainnnn/BIKE 12 G.webp" loading="lazy" alt="BMW R 1300 GS">
+      <h2>BMW R 1300 GS</h2>
+      <p>Ride beyond limits.</p>
+      <div class="price">Rent: Nu.10,000 / day</div>
+      <div class="price buying-price">Value: Nu.24.00 Lakh – 27.00 Lakh</div>
+    </div>
+
+    <div class="card" data-category="cruiser">
+      <img src="./mainnnn/bike 1 G.webp" loading="lazy" alt="Honda Rebel 500">
+      <h2>Honda Rebel 500</h2>
+      <p>Low ride, high confidence.</p>
+      <div class="price">Rent: Nu.1,500 / day</div>
+      <div class="price buying-price">Value: Nu.2.50 Lakh – 3.00 Lakh</div>
+    </div>
+
+    <div class="card" data-category="cruiser">
+      <img src="./mainnnn/bike 10 G.webp" loading="lazy" alt="H-D V-Rod">
+      <h2>H-D V-Rod</h2>
+      <p>Comfortable long rides</p>
+      <div class="price">Rent: Nu.6,500 / day</div>
+      <div class="price buying-price">Value: Nu.5.00 Lakh – 8.30 Lakh</div>
+    </div>
+
+    <div class="card" data-category="adventure">
+      <img src="./mainnnn/bike 3 G.webp" loading="lazy" alt="KTM 1290">
+      <h2>KTM 1290</h2>
+      <p>Built to explore every terrain</p>
+      <div class="price">Rent: Nu.1,200 / day</div>
+      <div class="price buying-price">Value: Nu.1.60 Lakh – 1.95 Lakh</div>
+    </div>
+
+    <div class="card" data-category="sports">
+      <img src="./mainnnn/bike 4 G.webp" loading="lazy" alt="Ninja H2">
+      <h2>Ninja H2</h2>
+      <p>Supercharged hyperbike adrenaline</p>
+      <div class="price">Rent: Nu.25,000 / day</div>
+      <div class="price buying-price">Value: Nu.40.00 Lakh</div>
+    </div>
+
+    <div class="card" data-category="sports">
+      <img src="./mainnnn/bike 6  G.webp" loading="lazy" alt="Ninja ZX-10R">
+      <h2>Ninja ZX-10R</h2>
+      <p>Born for the track</p>
+      <div class="price">Rent: Nu.1,200 / day</div>
+      <div class="price buying-price">Value: Nu.21.00 Lakh – 24.00 Lakh</div>
+    </div>
+
+    <div class="card" data-category="sports">
+      <img src="./mainnnn/bike 9G.webp" loading="lazy" alt="Ninja ZX-6R">
+      <h2>Ninja ZX-6R</h2>
+      <p>Precision track performance</p>
+      <div class="price">Rent: Nu.5,000 / day</div>
+      <div class="price buying-price">Value: Nu.13.50 Lakh – 15.50 Lakh</div>
+    </div>
+
+    <div class="card" data-category="cruiser">
+      <img src="./mainnnn/bike 6  G.webp" loading="lazy" alt="Harley-Davidson S">
+      <h2>Harley-Davidson S</h2>
+      <p>Modern American muscle</p>
+      <div class="price">Rent: Nu.7,500 / day</div>
+      <div class="price buying-price">Value: Nu.19.75 Lakh – 22.00 Lakh</div>
+    </div>
+
+    <div class="card" data-category="adventure">
+      <img src="./mainnnn/bike 9G.webp"  loading="lazy" alt="Honda NX500">
+      <h2>Honda NX500</h2>
+      <p>Boundless everyday exploration</p>
+      <div class="price">Rent: Nu.3,500 / day</div>
+      <div class="price buying-price">Value: Nu.6.33 Lakh – 7.44 Lakh</div>
+    </div>
+
+    <div class="card" data-category="sports">
+      <img src="./mainnnn/bike 5G.webp" loading="lazy" alt="Panigale V4 SP2">
+      <h2>Panigale V4 SP2</h2>
+      <p>Italian racetrack royalty</p>
+      <div class="price">Rent: Nu.3,500 / day</div>
+      <div class="price buying-price">Value: Nu.49.00 Lakh – 55.00 Lakh</div>
+    </div>
+
+    <div class="card" data-category="cruiser">
+      <img src="./mainnnn/bike 4 G.webp" loading="lazy" alt="Ducati Diavel V4">
+      <h2>Ducati Diavel V4</h2>
+      <p>Pure mechanical menace</p>
+      <div class="price">Rent: Nu.1,500 / day</div>
+      <div class="price buying-price">Value: Nu.32.00 Lakh – 34.50 Lakh</div>
+    </div>
+
+  </div>
+
+  <section class="action-banner">
+    <div class="action-card">
+      <h2>Ready to Make Your Move?</h2>
+      <p>Whether you want a weekend mountain cruise or a permanent setup for your garage, we handle it all.</p>
+      <a href="service.html#services-display" class="redirect-btn">Rent Now & Buy Now</a>
+    </div>
+  </section>
+
+  <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <img src="./image/lobg.png " loading="lazy" id="logo">
+                
+                <p>
+                   “We believe the greatest journeys are not measured by distance, but by the memories, freedom, and stories discovered along the way.”
+                </p>
+            </div>
+
+           
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+                
+            </div>
+
+            
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+
+                <p>Email: pematenzi2005@gmail.com</p>
+                <p>Phone: +975 16110648</p>
+                <p>Location: Paro</p>
+            </div>
+              
+              
+
+        </div>
+
+        
+        <div class="footer-bottom">
+            <p>© 2026 khamsang| All Rights Reserved</p>
+        </div>
+
+    </footer>
+  <script src="./JS/gallery.js"></script>
+</body>
+</html>
