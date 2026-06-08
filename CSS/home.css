@@ -428,5 +428,20 @@ footer{
             margin-left: -30px;
             margin-bottom: 15px;
         }
+
+        /*  */
+        .social-icons{
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .social-icons a{
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin-right: 0;
+    }
   
 }
